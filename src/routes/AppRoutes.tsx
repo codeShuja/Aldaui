@@ -5,6 +5,7 @@ import RecoverLayout from "../layouts/auth/recover-layout";
 import { ToastProvider } from "../components/ui/ToastContext";
 import ToastContainer from "../components/ui/ToastContainer";
 import SignupLayout from "../layouts/auth/signup-layout";
+import Dashboard from "../layouts/dashboard/dashboard";
 
 function AppRoutes() {
   return (
@@ -15,6 +16,8 @@ function AppRoutes() {
           <Route path="recover" element={<RecoverLayout />} />
           <Route path="signup" element={<SignupLayout />} />
         </Route>
+
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
       <ToastContainer />
     </ToastProvider>

@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "src/layouts/auth/page.tsx", "src/components/auth/icon.tsx"]
+  "include": ["src", "src/layouts/auth/page.tsx", "src/components/icon/icon.tsx"]
 }

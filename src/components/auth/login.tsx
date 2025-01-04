@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { EyeFilledIcon, EyeSlashFilledIcon, GitHubIcon, GoogleIcon } from "./icon";
+import { EyeFilledIcon, EyeSlashFilledIcon, GitHubIcon, GoogleIcon } from "../icon/icon";
 
 const Login = () => {
   const [action, setAction] = useState<string | null>(null);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { ArrowLeft, EyeFilledIcon, EyeSlashFilledIcon } from "./icon";
+import { ArrowLeft, EyeFilledIcon, EyeSlashFilledIcon } from "../icon/icon";
 import OtpInput from "../ui/OtpInput";
 import { useToast } from "../ui/ToastContext";
 

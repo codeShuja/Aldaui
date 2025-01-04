@@ -1,5 +1,5 @@
 import React from "react";
-import { UploadIcon } from "../auth/icon";
+import { UploadIcon } from "../icon/icon";
 
 interface FileInputProps {
   id: string;
