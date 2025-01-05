@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import Dropdown from './ui/Dropdown';
-import { ActiveIcon, EditIcon, PaginationendminorIcon, PaginationstartminorIcon, SearchIcon, TrashIcon, XIcon } from './icon/icon';
+import { ActiveIcon, EditIcon, PaginationendminorIcon, PaginationstartminorIcon, SearchIcon, TrashIcon, XIcon } from './icons/icon';
 
 interface HasEstado {
     id: number;

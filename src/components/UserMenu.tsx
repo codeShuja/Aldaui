@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Avatar from './ui/Avatar'
-import { MoreVerticalIcon } from './icon/icon'
+import { MoreVerticalIcon } from './icons/icon'
 
 interface UserMenuProps {
   userName: string

@@ -5,7 +5,7 @@ import {
   BriefcaseIcon, ChevronDownIcon, ChevronRightIcon, FileTextIcon, 
   HelpCircleIcon, HomeIcon, PackageIcon, SalesIcon, SettingsIcon, 
   TrendingUpIcon, TruckIcon, UsersIcon 
-} from './icon/icon';
+} from './icons/icon';
 
 interface SidebarProps {
   isSidebarCollapsed: boolean;

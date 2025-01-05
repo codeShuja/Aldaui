@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BarsIcon } from "./icon/icon";
+import { BarsIcon } from "./icons/icon";
 
 interface NavbarProps {
   toggleSidebar: () => void;
@@ -37,7 +37,7 @@ const Navbar = ({ toggleSidebar, isSidebarCollapsed }: NavbarProps) => {
             <div className="w-8 h-8 bg-gray-200 rounded"></div>
             <span
               className={`font-semibold transition-opacity duration-300 ${
-                isSidebarCollapsed ? "md:opacity-0" : "md:opacity-100"
+                isSidebarCollapsed } 
               }`}
             >
               Company Logo

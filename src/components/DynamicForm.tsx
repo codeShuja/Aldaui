@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { EyeFilledIcon, EyeSlashFilledIcon, UploadIcon } from "./icon/icon";
+import { EyeFilledIcon, EyeSlashFilledIcon, UploadIcon } from "./icons/icon";
 import Dropdown from "./ui/Dropdown";
 import YearMonthDatePicker from "./ui/YearMonthDatePicker";
 
