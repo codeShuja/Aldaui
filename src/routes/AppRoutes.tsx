@@ -8,6 +8,7 @@ import SignupLayout from "../layouts/auth/signup-layout";
 import Dashboard from "../layouts/dashboard/dashboard";
 import Home from "../components/landing/page";
 import { ThemeProvider } from "../lib/theme-provider";  
+import Chart from "../layouts/chart/chart";
 
 function AppRoutes() {
   return (
@@ -22,6 +23,7 @@ function AppRoutes() {
 
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/" element={<Home />} />
+          <Route path="/chart" element={<Chart />} />
         </Routes>
         <ToastContainer />
       </ToastProvider>

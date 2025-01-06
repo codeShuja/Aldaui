@@ -13,9 +13,9 @@ const templates = [
     path: "/dashboard",
   },
   {
-    name: "Markdown Editor Template",
-    image: "https://res.cloudinary.com/dv0mgatgr/image/upload/v1736049610/Aldaui/i8agznpguasnsp4flwrs.png",
-    path: "/markdown-editor",
+    name: "Chart Template",
+    image: "https://res.cloudinary.com/dv0mgatgr/image/upload/v1736139260/Aldaui/ezu505mtdwubrp9vp90l.png",
+    path: "/chart",
   },
 ];
 

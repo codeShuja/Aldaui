@@ -8,8 +8,9 @@ export function ModeToggle() {
     return (
         <Button
             variant="outline"
-            size="md"
+            size="sm"
             onClick={toggleTheme}
+            className='dark:border-gray-700'
         >
             {theme === 'light' ? (
                 <DarkIcon className="h-[1.2rem] w-[1.2rem]" />

@@ -50,7 +50,7 @@ export default function Home() {
                 <Companies />
                 <Template />
             </main>
-            <footer className="border-t py-6 md:py-0 md:px-8 bg-surface dark:bg-surface-dark text-text-dark">
+            <footer className="border-t py-6 md:py-0 md:px-8 bg-surface dark:bg-surface-dark text-text-dark flex justify-center items-center">
                 <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
                     <p className="text-sm leading-loose text-center text-muted md:text-left">
                         Built by{" "}

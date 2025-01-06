@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { AldauiIcon, SearchIcon } from "../icons/icon";
+import { AldauiIcon, GitHubIcon, SearchIcon } from "../icons/icon";
 import { Button } from "../ui/button";
 import { MainNav } from "./main-nav";
 import { ModeToggle } from "./mode-toggle";
@@ -37,7 +37,7 @@ export function SiteHeader() {
       <div className="container flex h-14 items-center">
         <div className="flex items-center mr-2">
           <Link to="/" className="h-14 w-14">
-          <AldauiIcon className="h-14 w-14 text-primary" />
+            <AldauiIcon className="h-14 w-14 text-primary" />
           </Link>
         </div>
         <MainNav />
@@ -51,11 +51,19 @@ export function SiteHeader() {
             >
               <SearchIcon className="mr-2 h-4 w-4" />
               Search docs...
-              <kbd className="ml-4 pointer-events-none hidden h-5 select-none items-center gap-1 rounded border sm:flex">
-                <span className="text-xs">⌘</span>K
+              <kbd className="ml-4 dark:border-transparent pointer-events-none hidden h-5 select-none items-center gap-1 rounded border sm:flex">
+                <span className="text-xs ">⌘</span>K
               </kbd>
             </Button>
           </div>
+          <div className="flex">
+            <Button size="sm" variant="outline">
+              <a href="https://github.com/Gutierrez-16/Aldaui">
+                <GitHubIcon className="h-6 w-6" />
+              </a>
+            </Button>
+          </div>
+
           <ModeToggle />
         </div>
 

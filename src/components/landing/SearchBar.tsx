@@ -9,7 +9,7 @@ interface SearchItem {
 const searchData = [
     { title: "Login Template", url: "/login" },
     { title: "Dashboard Template", url: "/dashboard" },
-    { title: "Markdown Editor Template", url: "/markdown-editor" },
+    { title: "Chart Template", url: "/chart" },
 ]
 
 function cn(...classes: (string | false | null | undefined)[]) {
@@ -79,6 +79,7 @@ export function SearchBar({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       const totalItems = query ? results.length : (favorites.length + recentSearches.length)
+      if (totalItems === 0) return; 
     
       if (e.key === 'ArrowDown') {
         e.preventDefault()
@@ -174,17 +175,17 @@ export function SearchBar({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
               <ul className="mt-4 max-h-80 overflow-auto">
                 {results.map((item, index) => (
                   <li key={item.url} className="group">
-                    <div className="flex items-center justify-between px-4 py-2 rounded-md hover:bg-gray-100">
+                    <div className={cn(
+                      "flex items-center justify-between px-4 py-2 rounded-md hover:bg-gray-100",
+                      selectedIndex === index ? "bg-blue-100" : ""
+                    )}>
                       <a
                         href={item.url}
                         onClick={(e) => {
                           e.preventDefault()
                           handleSelect(item)
                         }}
-                        className={cn(
-                          "flex-1 text-sm",
-                          selectedIndex === index ? "text-gray-900" : "text-gray-700"
-                        )}
+                        className="flex-1 text-sm text-gray-700"
                       >
                         {item.title}
                       </a>
