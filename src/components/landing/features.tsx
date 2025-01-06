@@ -55,7 +55,7 @@ export function Features() {
         {features.map((feature) => (
           <div
             key={feature.title}
-            className="relative overflow-hidden rounded-lg border border-border dark:border-border-dark bg-surface dark:bg-surface-dark p-6 hover:bg-muted/10 dark:hover:bg-muted/20 transition-all duration-200 ease-in-out shadow-lg dark:shadow-none"
+            className="relative overflow-hidden rounded-lg border border-border dark:border-border-dark bg-surfacedark:bg-black p-6 hover:bg-muted/10 dark:hover:bg-muted/20 transition-all duration-200 ease-in-out shadow-lg dark:shadow-none"
           >
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <div className="space-y-2 text-center">

@@ -5,12 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: 'class',
-   theme: {
+  theme: {
     extend: {
       colors: {
         background: {
-          DEFAULT: '#ffffff',
-          dark: '#111827',
+          DEFAULT: '#ffffff', 
+          dark: '#000000',
         },
         surface: {
           DEFAULT: '#f9fafb',

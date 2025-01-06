@@ -35,7 +35,7 @@ export function Template() {
         {templates.map((template) => (
           <div
             key={template.name}
-            className="relative overflow-hidden rounded-lg border border-border dark:border-border-dark bg-surface dark:bg-surface-dark transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:border-primary dark:hover:border-primary-hover"
+            className="relative overflow-hidden rounded-lg border border-border dark:border-border-dark bg-surface dark:bg-black transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:border-primary dark:hover:border-primary-hover"
           >
             <img
               src={template.image}
