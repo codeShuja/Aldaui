@@ -6,9 +6,11 @@ import { ToastProvider } from "../components/ui/ToastContext";
 import ToastContainer from "../components/ui/ToastContainer";
 import SignupLayout from "../layouts/auth/signup-layout";
 import Dashboard from "../layouts/dashboard/dashboard";
-import Home from "../components/landing/page";
+import Home from "../layouts/landing/page";
 import { ThemeProvider } from "../lib/theme-provider";  
 import Chart from "../layouts/chart/chart";
+import { Components } from "../layouts/landing/app/page";
+import Button from "../layouts/landing/preview";
 
 function AppRoutes() {
   return (
@@ -24,6 +26,10 @@ function AppRoutes() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/" element={<Home />} />
           <Route path="/chart" element={<Chart />} />
+
+          <Route path="/component" element={<Components />}>
+          <Route path="buttons" element={<Button />} />
+          </Route>
         </Routes>
         <ToastContainer />
       </ToastProvider>

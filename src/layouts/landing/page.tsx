@@ -1,9 +1,9 @@
-import { GitHubIcon } from "../icons/icon";
-import { Button } from "../ui/button";
-import { Companies } from "./companies";
-import { Features } from "./features";
-import { SiteHeader } from "./site-header";
-import { Template } from "./Template";
+import { GitHubIcon } from "../../components/icons/icon";
+import { Button } from "../../components/ui/button";
+import { Companies } from "../../components/landing/companies";
+import { Features } from "../../components/landing/features";
+import { SiteHeader } from "../../components/landing/site-header";
+import { Template } from "../../components/landing/Template";
 
 export default function Home() {
     return (
@@ -25,7 +25,7 @@ export default function Home() {
                                 size="lg"
                                 className="w-auto flex items-center justify-center bg-primary hover:bg-primary-hover text-white"
                             >
-                                <a href="/" className="flex items-center">
+                                <a href="/component" className="flex items-center">
                                     Get Started
                                 </a>
                             </Button>

@@ -54,6 +54,9 @@ export function SiteHeader({ onToggleSidebar }: SiteHeaderProps) {
     setSearchOpen(false);
   };
 
+  useEffect(() => {
+  }, [location.pathname]);
+
   return (
     <header
       className={`sm:py-2 px-4 py-4 sticky top-0 z-50 w-full ${isScrolled ? "border-b" : ""
@@ -72,7 +75,7 @@ export function SiteHeader({ onToggleSidebar }: SiteHeaderProps) {
       </div>
 
       <div className="flex items-center space-x-2">
-        {location.pathname === "/component" && (
+        {location.pathname.startsWith("/component") && (
           <button
             onClick={onToggleSidebar}
             className="sm:hidden p-2 rounded-md bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
