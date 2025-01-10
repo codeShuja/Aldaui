@@ -11,10 +11,11 @@ import { ThemeProvider } from "../lib/theme-provider";
 import Chart from "../layouts/chart/chart";
 import { Components } from "../layouts/landing/app/page";
 import Button from "../layouts/landing/preview";
+import InstallationPage from "../layouts/landing/app/InstallationPage";
 
 function AppRoutes() {
   return (
-    <ThemeProvider>
+    <ThemeProvider> 
       <ToastProvider>
         <Routes>
           <Route path="/login" element={<Page />}>
@@ -28,7 +29,8 @@ function AppRoutes() {
           <Route path="/chart" element={<Chart />} />
 
           <Route path="/component" element={<Components />}>
-          <Route path="buttons" element={<Button />} />
+            <Route path="buttons" element={<Button />} />
+            <Route path="install" element={<InstallationPage />} />
           </Route>
         </Routes>
         <ToastContainer />

@@ -78,9 +78,9 @@ export function SiteHeader({ onToggleSidebar }: SiteHeaderProps) {
         {location.pathname.startsWith("/component") && (
           <button
             onClick={onToggleSidebar}
-            className="sm:hidden p-2 rounded-md bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-          >
-            <BarsIcon className="h-6 w-6 text-gray-700 dark:text-white" />
+            className="mr-2 rounded-md p-2  lg:hidden"
+            >
+            <BarsIcon className="h-6 w-6  dark:text-white" />
           </button>
         )}
 
